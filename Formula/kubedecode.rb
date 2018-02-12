@@ -8,6 +8,6 @@ class Kubedecode < Formula
 
   def install
     system "make", "install", "PREFIX=#{prefix}"
-    ln_sf source, "#{prefix}/kubedecode"
+    bin.install_symlink "#{prefix}/kubedecode"
   end
 end
