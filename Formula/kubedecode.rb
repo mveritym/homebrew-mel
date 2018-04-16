@@ -4,7 +4,7 @@ class Kubedecode < Formula
   url "https://github.com/mveritym/kubedecode/archive/v1.4.tar.gz"
   sha256 "22a23a6dfa8a1d4abba677d09ba3789ab54f658d934d470172a7d4affc083266"
 
-  depends_on "jq" => :run
+  depends_on "jq"
 
   def install
     system "make", "install", "PREFIX=#{prefix}"
